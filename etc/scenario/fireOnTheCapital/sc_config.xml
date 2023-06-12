@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <core>
+        <timeline>
+            <year>190</year>
+            <month>1</month>
+        </timeline>
+        <architecture>Resource/Scenario/sc_arch.txt</architecture>
+        <person>Resource/Scenario/sc_person.txt</person>
+        <fraction>Resource/Scenario/sc_fraction.txt</fraction>
+        <map>Resource/Scenario/sc_map.txt</map>
+        <string_table>Resource/Scenario/sc_string.xml</string_table>
+        <word>Resource/Scenario/sc_word.xml</word>
+    </core>
+    <ui>
+        <timeline>
+            <year>年</year>
+            <month>月</month>
+        </timeline>
+        <map>Resource/Image/Map/map.png</map>
+        <big_city>
+            <img>Resource/Image/Architecture/big.png</img>
+            <side>70</side>
+        </big_city>
+        <mid_city>
+            <img>Resource/Image/Architecture/mid.png</img>
+            <side>80</side>
+        </mid_city>
+        <tiny_city>
+            <img>Resource/Image/Architecture/tiny.png</img>
+            <side>70</side>
+        </tiny_city>
+        <pass>
+            <img>Resource/Image/Architecture/pass.png</img>
+            <side>70</side>
+        </pass>
+        <flag>
+            <img>Resource/Image/Architecture/flag.png</img>
+            <side>30</side>
+        </flag>
+        <color>Resource/Scenario/sc_color.xml</color>
+    </ui>
+</config>

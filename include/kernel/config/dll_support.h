@@ -1,0 +1,12 @@
+#ifndef YRUI_CONFIG_DLL_SUPPORT_H_H_
+#define YRUI_CONFIG_DLL_SUPPORT_H_H_
+
+#include <boost/config.hpp>
+
+#ifndef YRUI_CORE_IMPL
+#define CORE_DECL BOOST_SYMBOL_IMPORT
+#else
+#define CORE_DECL BOOST_SYMBOL_EXPORT
+#endif //! YRUI_CORE_IMPL
+
+#endif // YRUI_CONFIG_DLL_SUPPORT_H_H_
