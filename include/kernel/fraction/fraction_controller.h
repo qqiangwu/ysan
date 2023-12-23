@@ -11,6 +11,7 @@
  */
 
 #include "kernel/component_fwd.h"
+#include "kernel/core/ai_fraction.h"
 
 namespace yrui {
 namespace fraction {

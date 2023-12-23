@@ -1,11 +1,12 @@
 #ifndef FRONTEND_H
 #define FRONTEND_H
 
-#include "foundation/foundation.h"
-#include "ui/config.h"
+#include "ui/Frontend_config.h"
 
 namespace Bygone {
-FRONTEND_API int run(const yrui::Foundation& foundation);
+namespace Frontend {
+    FRONTEND_API int run(int argc, char* argv[]);
+}
 }
 
 #endif // FRONTEND_H

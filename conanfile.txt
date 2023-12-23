@@ -1,0 +1,12 @@
+[requires]
+qt/5.15.9
+boost/1.81.0
+
+[test_requires]
+gtest/cci.20210126
+benchmark/1.7.1
+
+[generators]
+CMakeDeps
+
+[options]

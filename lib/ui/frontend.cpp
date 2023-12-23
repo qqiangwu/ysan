@@ -1,15 +1,29 @@
-#include <QtWidgets/QApplication>
-
+#include "ui/Frontend.h"
+#include "Main/Byapp.h"
+#include "foundation/foundation.h"
+#include <QDebug>
+#include <QMessageBox>
+#include <boost/format.hpp>
 #include <exception>
+#include <QtPlugin>
 
-#include "ui/bygame.h"
-#include "ui/frontend.h"
+Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
 
 namespace Bygone {
-int run(const yrui::Foundation& fnd)
-{
-    Bygame game(fnd);
+namespace Frontend {
+    int run(int argc, char* argv[])
+    try {
+        // TODO
+        //yrui::Foundation _(argc, argv);
+        Byapp app(argc, argv);
 
-    return qApp->exec();
+        app.setApplicationDisplayName("亦三国");
+        app.setApplicationName("亦三国");
+
+        return app.exec();
+    } catch (std::exception& e) {
+        QMessageBox::information(nullptr, "Error", e.what());
+        return 1;
+    }
 }
 }

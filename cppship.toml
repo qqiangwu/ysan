@@ -5,7 +5,7 @@ std = 20
 
 [dependencies]
 boost = { version = "1.81.0", components = ["headers", "log", "system", "filesystem", "thread"] }
-#qt = { version = "6.5.0", components = ["qtCore", "qtGui", "qtWidgets"] }
+qt = { version = "5.15.9", components = ["Core", "Gui", "Widgets"] }
 
 [profile]
 definitions = ["BOOST_PROCESS_USE_STD_FS", "FUSION_MAX_VECTOR_SIZE=30", "BOOST_SPIRIT_USE_PHOENIX_V3", "BOOST_SPIRIT_UNICODE", "BOOST_SPIRIT_NO_PREDEFINED_TERMINALS", "BOOST_LOG_WITHOUT_WCHAR_T", "BOOST_SPIRIT_UNICODE"]

@@ -1,3 +1,4 @@
+#include <boost/graph/properties.hpp>
 #include <boost/graph/exterior_property.hpp>
 #include <boost/graph/floyd_warshall_shortest.hpp>
 #include <boost/graph/st_connected.hpp>
@@ -22,7 +23,7 @@ namespace resource {
                 g[v] = vs[v];
             }
 
-            return std::move(g);
+            return g;
         }
     } // of namespace detail
 
